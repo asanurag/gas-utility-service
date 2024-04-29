@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submit Service Request</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Submit Service Request</h1>
+    <form>
+      <div class="form-group">
+        <label for="type">Request Type:</label>
+        <select id="type" name="type" required>
+          <option value="">Select Type</option>
+          <option value="leak">Gas Leak</option>
+          <option value="repair">Repair</option>
+          <option value="maintenance">Maintenance</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="details">Request Details:</label>
+        <textarea id="details" name="details" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="attachments">Attachments:</label>
+        <input type="file" id="attachments" name="attachments" multiple>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
